@@ -1,0 +1,18 @@
+default environment: test
+
+basic configuration:
+  browser name: CHROME
+  headless: false
+  implicit wait: 3
+  explicit wait: 30
+  faker language: pl-PL
+  browser option maximized: start-maximized
+  browser option remote allow: --remote-allow-origins=*
+
+environments:
+  - env name: test
+    web url: http://automationpractice.pl/index.php
+    userName: Tester
+    password: password123
+    mail: test@gmail.com
+    currency: USD
